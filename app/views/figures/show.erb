@@ -8,6 +8,9 @@
 </ul>
 
 <label><h3>Landmark: </h3></label>
-<label><%= @landmark.name %></label>
+<ul>
+  <% @figure.landmarks.each do |landmark| %>
+  <li><%= landmark.name %></li>
+</ul>
 
 <button type="button" name="edit"><a href="/figures/<%= @figure.id %>/edit">Edit</a></button>
