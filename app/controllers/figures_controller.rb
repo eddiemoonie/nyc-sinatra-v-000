@@ -51,6 +51,6 @@ class FiguresController < ApplicationController
 
     @figure.save
 
-    redirect("/figures/#{@original_figure.id}")
+    redirect("/figures/#{@figure.id}")
   end
 end
