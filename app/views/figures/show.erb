@@ -1,7 +1,10 @@
 <h1><%= @figure.name %></h1>
 
 <label><h3>Title: </h3></label>
-<label><%= @title.name %></label>
+<ul>
+  <% @figure.titles.each do |title| %>
+  <li><%= @title.name %></li>
+</ul>
 
 <label><h3>Landmark: </h3></label>
 <label><%= @landmark.name %></label>
